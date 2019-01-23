@@ -92,10 +92,10 @@ if (recipe.length === 0) {
         para.textContent = ['Serves: ' + popular.recipe.yield];
         calories.textContent = ['Calories per dish: ' + popular.recipe.calories];
         
-        ingredientLines.textContent = "Ingredients: ";
-        for (x = 0; x < popular.hits.ingredientLines.length; x++) {
+        ingredientLines.textContent = 'Ingredients: ';
+        for (x = 0; x < popular.recipe.ingredientLines.length; x++) {
             let ul = document.createElement('ul');
-            ingredientLines.textContent += popular.hits.ingredientLines[x].value + ' ';
+            ingredientLines.textContent += popular.recipe.ingredientLines[x] + ' ';
             ingredientLines.appendChild(ul)
         };
 
