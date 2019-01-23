@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Recipe Generator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' href='apiChallenge.css'>
+</head>
+<body>
+    <h1>Mom, What's for dinner?</h1>
+    <div class='wrapper'>
+        <div class='controls'>
+            <!--Search-->
+            <form>
+                <p>
+                    <label for='search'>Base food(s)</label>
+                    <input type="text" id='search' class='search'>
+                </p>
+                <p>
+                    <label for='diet'>Dietary limits</label>
+                    <input type='text' id='diet' class='diet'>
+                </p>
+                <p>
+                    <label for='health'>Health Restrictions</label>
+                    <input type='text' id='health' class='health'>
+                </p>
+                <p>
+                    <label for='excluded'>Food Allergies</label>
+                    <input  type='text' id='excluded' class='excluded'>
+                </p>
+                <p>
+                    <label for='calories'>Calorie Count</label>
+                    <input type='range' min='1' max='10000' id='calories' class='calories'>
+                </p>
+                <p>
+                    <button class='submit'>Search</button>
+                </p>
+            </form>
+        </div>
+        <!--Results-->
+        <div class='results'>
+            <nav>
+                <button class='prev'>Previous</button>
+                <button class='next'>Next</button>
+            </nav>
+            <section>
+                <h2></h2>
+            </section>
+        </div>
+    </div>    
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="apiChallenge.js"></script>
+</body>
+</html>
